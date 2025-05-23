@@ -59,7 +59,7 @@ label {
   background-color: rgba(234, 224, 245, 0.131);
   padding: 15px;
   border-radius: 5px;
-  
+
 }
 input {
   height: 50px;
@@ -217,14 +217,13 @@ img {
   height: auto;
   border: 3px dotted black;
 }
-@media (max-width: 50rem) {
+@media (min-width: 300px) and (max-width:40rem){
   .cont_login {
-    width: 90%;
-    grid-template-columns: 1fr;
+    width: 95%;
     padding: 5px;
   }
   .title {
-    font-size: 25px;
+    font-size: 19px;
   }
   h1 {
     text-align: center;
@@ -234,7 +233,6 @@ img {
     flex-grow: 1;
   }
   .Seccion_categoria {
-    box-shadow: 0px 0px 4px 5px rgb(0, 0, 0);
     width: 95%;
   }
   a {
@@ -247,38 +245,44 @@ img {
   }
   label {
     margin-top: 1rem;
-    font-size: 30px;
+    font-size: 20px;
+    letter-spacing: unset;
   }
   input {
-    border: 2px solid lightcoral;
+    border: 2px solid rgb(200, 166, 166);
     margin-top: 1rem;
     width: 95%;
     min-height: 10rem;
+        border-radius: 5px;
+
   }
   input::placeholder {
     font-size: 15px;
     text-transform: uppercase;
+    
   }
   .request {
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
     height: 10rem;
     width: 95%;
   }
   .seleccion {
     flex-direction: column;
     padding: 5px;
-    width: 95%;
     gap: 2rem;
     margin: auto;
     margin-bottom: 5rem;
     background: unset;
     border: unset;
-    max-height: fit-content;
+      box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+    padding: 10px;
   }
+
   button {
-    background-color: rgb(206, 224, 230);
+    background-color: rgb(158, 223, 245);
     width: 100%;
     padding: 30px;
+    border: none;
   }
   button:hover {
     transform: scale(1.05);
@@ -286,11 +290,13 @@ img {
   .categoria_title {
     padding: 5px;
     letter-spacing: unset;
-    font-size: 20px;
+    font-size: 15px;
     width: 95%;
+    margin-bottom: 10px;
   }
   .contenedor_general {
     width: 95%;
+    box-shadow: none;
   }
 }
 .contenedor_general {
